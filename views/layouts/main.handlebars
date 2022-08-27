@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tech Blog</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+<div class="">
+    <header class="hero">
+        <nav >
+            {{#if loggedIn}}
+            <a  href="/dashboard"><h3>My Dashboard</h3></a>
+            <button id="logout" ><h3>Logout</h3></button>
+            {{else}}
+            <a  href="/login"><h3>Login</h3></a>
+            {{/if}}
+        </nav>
+        <h1>
+            <a class="app-title" href="/">The Tech Blog</a>
+        </h1>
+        
+    </header>
+    <main>
+        {{{body}}}
+    </main>
+    <footer>
+        Made with ❤️ by Deanna Madon
+    </footer>
+</div>
+
+
+
+
+{{#if loggedIn}}
+<script src="/javascript/logout.js"></script>
+{{/if}}
+
+</body>
+</html>
