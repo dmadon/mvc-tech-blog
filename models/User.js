@@ -42,13 +42,13 @@ User.init(
         hooks:{
             // create a hook that hashes password before creating the new user
             async beforeCreate(newUserData) {
-                newUserData.password = await bcrypt.hash(newUserData.password,10);
+                newUserData.password = await bcrypt.hash(newUserData.password, 10);
                 return newUserData;
             },
             // create a hook that hashes password when user info is updated
             async beforeUpdate(updatedUserData) {
-                updatedUserData.password = await bcrypt.hash(updatedUserData.password,10);
-                return newUserData;
+                updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
+                return updatedUserData;
             }
         },
         sequelize,
