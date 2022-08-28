@@ -1,0 +1,30 @@
+<article class="card">
+    <div class="card-header flex-row justify-space-between align-center">
+        <h1>{{post.title}}</h1>
+        <h4 >Posted by {{post.user.username}} on {{format_date post.created_at}}</h4> 
+    </div>    
+    <div class="card-body">
+        <h3>{{post.content}}</h3>
+    </div>
+    <div>
+        {{#each post.comments as |comment|}}
+            {{>comments comment}}
+        {{/each}}
+    </div>
+</article>
+{{#if loggedIn}}
+<form class="comment-form">
+    <div>
+        <label for="comment-input" class="form-label">Leave a comment:</label>
+        {{!-- <div class="resizeable"> --}}
+            {{!-- <input type="textarea" id="comment-input" class="form-input "> --}}
+            <textarea id="comment-input" name="comment-input" class="textarea"></textarea>
+        {{!-- </div> --}}
+    </div>
+    <div>
+        <button type="submit" class="btn">Post Comment</button>
+    </div>
+</form>
+
+
+{{/if}}

@@ -19,6 +19,7 @@ body {
   color: var(--dark);
   line-height: 1.5;
   font-size: 16px;
+  
 }
 
 h1,
@@ -36,6 +37,7 @@ h6 {
 main {
   margin: 20px auto;
   width: 94%;
+  min-height:100vh
 }
 
 p {
@@ -56,6 +58,11 @@ p {
   background-color: var(--light-dark);
   box-shadow: 3px 3px var(--dark);
   transform: translate(-1px, -1px);
+}
+
+.comment-form .btn{
+  width: 25%;
+  ;
 }
 
  .btn:hover {
@@ -98,9 +105,14 @@ p {
   color: var(--primary);
 }
 
+
+
 footer {
   padding:1%;
   text-align: center;
+  position: sticky;
+  bottom: 0;
+  min-width: 100%;
 }
 
 .hero p {
@@ -164,6 +176,10 @@ nav {
   border-radius: var(--border-radius);
 }
 
+.card a{
+  text-decoration: none;
+}
+
 .card-header {
   color: var(--primary);
   background-color: var(--dark);
@@ -176,13 +192,18 @@ nav {
 
 }
 
-.card-body {
+.card-body  {
   padding: 2.5%;
 }
 
-.login-signup{
+.login-signup {
   min-width: 25%;
   margin: 0 10px 0 10px;
+}
+
+.comment {
+  font-style: italic;
+  margin: 1% 2.5% 
 }
 
 /* FORM */
@@ -191,6 +212,8 @@ nav {
 .form-textarea {
   display: block;
 }
+
+
 
 .form-label {
   font-size: 1.1rem;
@@ -205,6 +228,16 @@ nav {
   border: 2px solid var(--light-dark);
   border-radius: var(--border-radius);
 }
+
+.textarea {
+  min-height:150px;
+  min-width:50%;
+  max-width:100%;
+  font-family:  "IBM Plex Sans", sans-serif;
+  font-size: 18px;
+}
+
+
 
 /* HEIGHT / WIDTH UTILS */
 .min-100-vh {

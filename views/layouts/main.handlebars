@@ -9,28 +9,29 @@
 </head>
 
 <body>
-<div class="">
-    <header class="hero">
-        <nav >
-            {{#if loggedIn}}
-            <a  href="/dashboard"><h3>My Dashboard</h3></a>
-            <button id="logout" ><h3>Log Out</h3></button>
-            {{else}}
-            <a  href="/login"><h3>Log In</h3></a>
-            {{/if}}
-        </nav>
-        <h1>
-            <a class="app-title" href="/">The Tech Blog</a>
-        </h1>
-        
-    </header>
-    <main>
-        {{{body}}}
-    </main>
-    <footer>
-        Made with ❤️ by Deanna Madon
-    </footer>
-</div>
+
+    <div class="">
+        <header class="hero">
+            <nav >
+                {{#if loggedIn}}
+                <a  href="/dashboard"><h3>My Dashboard</h3></a>
+                <button id="logout" ><h3>Log Out</h3></button>
+                {{else}}
+                <a  href="/login"><h3>Log In</h3></a>
+                {{/if}}
+            </nav>
+            <h1>
+                <a class="app-title" href="/">The Tech Blog</a>
+            </h1>
+            
+        </header>
+        <main>
+            {{{body}}}
+        </main>
+        <footer>
+            Made with ❤️ by Deanna Madon
+        </footer>
+    </div>
 
 
 
