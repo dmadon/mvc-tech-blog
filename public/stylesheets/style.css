@@ -48,7 +48,7 @@ p {
   padding: 6px 5px;
   width: 100%;
   display: block;
-  margin: 5px 0;
+  margin: 20px 0;
   border-radius: var(--border-radius);
   color: var(--primary);
   border: none;
@@ -178,6 +178,11 @@ nav {
 
 .card-body {
   padding: 2.5%;
+}
+
+.login-signup{
+  min-width: 25%;
+  margin: 0 10px 0 10px;
 }
 
 /* FORM */
