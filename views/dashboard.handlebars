@@ -1,0 +1,29 @@
+<div class="flex-row justify-space-between align-center">
+    <h1>Dashboard: {{user}}</h1>
+    <button class="save-btn btn" id="create-post-btn">Create New Post</button>
+</div>
+
+{{#each posts}}
+<article class="card">
+
+
+    <div class="card-header flex-row justify-space-between align-center">
+        <div>
+            <a href="/posts/{{id}}">
+            <h1>{{title}}</h1>
+            <h4>Posted on {{format_date created_at}}, last updated {{format_date updated_at}}</h4>
+            </a>
+        </div>
+        
+        
+        <a href="/dashboard/edit/{{id}}"><h1 class="edit-link">Edit Post</h1></a>
+        
+    </div>
+
+
+</article>
+
+
+{{/each}}
+
+<script src="/javascript/create-post.js"></script>

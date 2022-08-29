@@ -27,7 +27,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6
+  {
   font-weight: 700;
   margin: 0;
   color: var(--dark);
@@ -60,9 +61,30 @@ p {
   transform: translate(-1px, -1px);
 }
 
-.comment-form .btn{
+.comment-form .btn, .edit-post-form .btn, .new-post-form .btn,#create-post-btn{
   width: 25%;
   ;
+}
+
+.save-btn{
+  background-color: green;
+}
+
+.delete-btn{
+  background-color: red;
+}
+
+.btn-no-style {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+  color: #225ca3;
+  font-size: 100%;
+  font-weight: bold;
+  transition: color .1s;
+  /* margin-left: 16px; */
 }
 
  .btn:hover {
@@ -100,12 +122,14 @@ p {
 }
 
 .hero, footer {
-  padding: 3% 4%;
+  padding: 2% 2%;
   background-color: var(--dark);
   color: var(--primary);
 }
 
-
+.nav-item{
+  padding-right: 3%
+}
 
 footer {
   padding:1%;
@@ -152,7 +176,13 @@ nav {
   padding-bottom: 2%
 }
 
+.text-center{
+  text-align: center;
+}
 
+.decoration-none{
+  text-decoration: none;
+}
 
 .status-icon {
   padding: 2px 5px;
@@ -222,21 +252,28 @@ nav {
 
 .form-input {
   width: 100%;
-  padding: 3%;
+  /* padding: 3%; */
   margin: 5px 0;
   font-size: 1.2rem;
   border: 2px solid var(--light-dark);
   border-radius: var(--border-radius);
 }
 
-.textarea {
+.comment-textarea, .content-textarea {
   min-height:150px;
   min-width:50%;
   max-width:100%;
   font-family:  "IBM Plex Sans", sans-serif;
-  font-size: 18px;
+  font-size: 1.2rem;
+  border: 2px solid var(--light-dark);
+  border-radius: var(--border-radius);
 }
 
+.content-textarea{
+  min-height:300px;
+  min-width:100%;
+
+}
 
 
 /* HEIGHT / WIDTH UTILS */

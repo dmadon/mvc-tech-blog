@@ -1,0 +1,26 @@
+<form class="edit-post-form">
+    <div>
+        <label for="edit-title" class="form-label">Edit title:</label>
+        <input id="edit-title" type="text" value="{{post.title}}" class="form-input">
+    </div>
+    <div>
+        <label for="edit-content" class="form-label">Edit content:</label>
+        <textarea name="edit-content" id="edit-content" class=" content-textarea">{{post.content}}</textarea>
+    </div>
+    <div class="flex-row justify-space-around">
+        <button type="submit" class="btn save-btn">Save Changes</button>
+        <button id="delete-post-btn" type="delete" class="btn delete-btn">Delete Post</button>
+    </div>
+    <div class="text-center">
+        <a href="/dashboard" class="decoration-none"><h3>&larr; Back to Dashboard</h3></a>
+    </div>
+</form>
+
+
+
+
+
+
+
+
+<script src="/javascript/edit-post.js"></script>

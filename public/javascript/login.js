@@ -22,7 +22,7 @@ async function loginFormHandler(event){
             alert('Invalid email address or password.');
         };
     }
-    alert('Please enter your email address and password to log in.');
+    else{alert('Please enter your email address and password to log in.')};
 };
 
 async function signupFormHandler(event){
