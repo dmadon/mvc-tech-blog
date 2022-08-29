@@ -69,8 +69,8 @@ router.get('/edit/:id',withAuth,(req,res) => {
     .catch(err => {
         console.log(err);
         res.status(500).json(err);
-    })
-})
+    });
+});
 
 // CREATE A ROUTE TO THE NEW POST VIEW
 router.get('/new-post',(req,res) => {

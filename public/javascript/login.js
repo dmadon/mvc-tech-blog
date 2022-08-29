@@ -49,7 +49,7 @@ async function signupFormHandler(event){
             alert(response.statusText);
         };
     }
-    alert('All fields are required');
+    else{alert('All fields are required')};
 };
 
 document.querySelector('.login-form').addEventListener('submit',loginFormHandler);

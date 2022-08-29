@@ -39,10 +39,8 @@ async function deletePostHandler(event){
     }
     else{
         alert(response.statusText);
-    }
-
-
-}
+    };
+};
 
 
 
